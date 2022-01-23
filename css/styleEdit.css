@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&display=swap");
+body {
+	padding:0;
+	box-sizing: border-box;
+    font-family: "Comfortaa", sans-serif;
+}
+
+.mainscreen
+{
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+
+}
+
+.card {
+	width: 60rem;
+    margin: auto;
+    background: white;
+    position:center;
+    align-self: center;
+    top: 50rem;
+    border-radius: 1.5rem;
+    box-shadow: 4px 3px 20px #3535358c;
+    display:flex;
+    flex-direction: row;
+    
+}
+
+.leftside {
+	background: #ffffff;
+	width: 25rem;
+	display: inline-flex;
+    align-items: center;
+    justify-content: center;
+	border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+}
+
+.product {
+    object-fit: cover;
+}
+
+.rightside {
+    background-color: #ffffff;
+	width: 35rem;
+	border-bottom-right-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    padding: 1rem 2rem 3rem 3rem;
+}
+
+p{
+    display:block;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: .8rem 0;
+}
+
+.inputbox
+{
+    color:#030303;
+	width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 1.5px solid #ccc;
+    margin-bottom: 1rem;
+    border-radius: 0.3rem;
+    font-family: 'Roboto', sans-serif;
+    color: #615a5a;
+    font-size: 1.1rem;
+    font-weight: 500;
+  outline:none;
+}
+
+.expcvv {
+    display:flex;
+    justify-content: space-between;
+    padding-top: 0.6rem;
+}
+
+.expcvv_text{
+    padding-right: 1rem;
+}
+.expcvv_text2{
+    padding:0 1rem;
+}
+
+.button{
+    background: #555;
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    width:100%;
+    letter-spacing: .11rem;
+    outline:none;
+}
+
+.button:hover
+{
+    background: #57b846;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+@media only screen and (max-width: 1000px) {
+    .card{
+        flex-direction: column;
+        width: auto;
+      
+    }
+
+    .leftside{
+        width: 100%;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0;
+      border-top-right-radius:0;
+      border-radius:0;
+    }
+
+    .rightside{
+        width:auto;
+        border-bottom-left-radius: 1.5rem;
+        padding:0.5rem 3rem 3rem 2rem;
+      border-radius:0;
+    }
+}
+.example-2 .btn-tertiary{color:#555;padding:0;line-height:40px;width:300px;margin-left:2px;display:block;border:2px solid #555;}
+.example-2 .btn-tertiary:hover,.example-2 .btn-tertiary:focus{color:#57b846;border-color:#57b846}
+.example-2 .input-file{width:.1px;height:.1px;opacity:0;overflow:hidden;position:absolute;z-index:-1}
+.example-2 .input-file + .js-labelFile{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:0 10px;cursor:pointer}
+.example-2 .input-file + .js-labelFile .icon:before{content:"\f093"}
+.example-2 .input-file + .js-labelFile.has-file .icon:before{content:"\f00c";color:#5AAC7B}
